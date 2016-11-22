@@ -1,0 +1,28 @@
+<html ng-app="weather">
+<head><title> Third Party Programming</title>
+    
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+        
+        
+    </head>
+    
+<body style="background-color:lightpink">
+    <div class="container">
+        <div ng-include="'app/search/search.html'">
+        </div>
+    </div>
+    
+        
+    <script src="app/search/search.js"></script>    
+    <script src="app/search/searchCtrl.js"></script>
+    <script src="app/search/searchSvc.js"></script>
+    <script src="app.js"></script>
+        
+    
+    
+</body>
+</html>

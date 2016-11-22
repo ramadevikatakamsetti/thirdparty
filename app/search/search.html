@@ -1,0 +1,73 @@
+    
+<div class="container" ng-controller="searchCtrl">
+    <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <h1>Yahoo Weather Forecast</h1>
+         <div class="col-md-6 col-md-offset-3">
+<input type=text class="form-control"  id="txtState" placeholder="Enter State" ng-model="state" />
+        <br/>
+        <input type=text class="form-group"  id="txtCountry" placeholder="Enter Country" ng-model="country" />
+        <br/>
+    <button ng-click="data()" class="btn btn-success" type="button" name="button">Search</button>
+        </div>
+        
+        </div>
+    
+    {{state}}
+    {{country}}
+            </div>
+     <div class="row" ng-show="visible">
+    <div class="col-md-12 col-md-offset-3">
+      <h2>Sunrise:&nbsp;{{searchData.astronomy.sunrise}}</h2>
+    </div>
+  
+</div>
+
+    <!--
+<div class="container" ng-controller="landingCtrl">
+  <div class="row">
+
+
+    <div class="col-md-6 col-md-offset-3">
+      <h1>Yahoo Weather Forecast</h1>
+    </div>
+    <div class="col-md-6 col-md-offset-3">
+      <input ng-model="state" type="text" class="form-control" id="" placeholder="Enter your State">
+      </br>
+      <input ng-model="city" type="text" class="form-control" id="" placeholder="Enter your City">
+
+    </div>
+
+
+  </div>
+  </br>
+  <div class="row">
+    <div class="col-md-3 col-md-offset-5">
+      <button ng-click="data()" class="btn btn-success" type="button" name="button">Submit</button>
+    </div>
+  </div>
+   <div class="col-md-12 col-md-offset-6">
+
+      <h4>{{weatherData.astronomy.sunrise}}</h4>
+    </div>
+    <div class="col-md-12 col-md-offset-6">
+      <h4>{{weatherData.astronomy.sunset}}</h4>
+    </div>
+    <div class="col-md-12 col-md-offset-6">
+      <h4>{{weatherData.atmosphere.humidity}}</h4>
+    </div>
+    <div class="col-md-12 col-md-offset-6">
+      <h4>{{weatherData.atmosphere.pressure}}</h4>
+    </div>
+    <div class="col-md-12 col-md-offset-6">
+      <h4>{{weatherData.atmosphere.rising}}</h4>
+    </div>
+    <div class="col-md-12 col-md-offset-6">
+      <h4>{{weatherData.atmosphere.visibility}}</h4>
+    </div>
+  </div>
+
+</div>
+    -->
+    
+   
