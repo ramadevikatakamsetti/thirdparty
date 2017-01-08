@@ -2,23 +2,29 @@
 <div class="container" ng-controller="searchCtrl">
     <div class="row">
     <div class="col-md-6 col-md-offset-3">
-        <h1>Yahoo Weather Forecast</h1>
+        <h1>Details</h1>
          <div class="col-md-6 col-md-offset-3">
-<input type=text class="form-control"  id="txtState" placeholder="Enter State" ng-model="state" />
+<!--<input type=text class="form-control"  id="txtState" placeholder="Enter State" ng-model="state" />
         <br/>
         <input type=text class="form-group"  id="txtCountry" placeholder="Enter Country" ng-model="country" />
-        <br/>
+        <br/>-->
     <button ng-click="data()" class="btn btn-success" type="button" name="button">Search</button>
         </div>
         
         </div>
     
-    {{state}}
-    {{country}}
+   <!-- {{state}}
+    {{country}}-->
             </div>
-     <div class="row" ng-show="visible">
+    <div class="row" ng-show="visible">
     <div class="col-md-12 col-md-offset-3">
-      <h2>Sunrise:&nbsp;{{searchData.astronomy.sunrise}}</h2>
+        <div ng-repeat = "item in searchData">
+            <h2>Login:&nbsp;{{item.login}}</h2>
+        <h2>Id:&nbsp;{{item.id}}</h2>
+             
+
+        </div>
+      
     </div>
   
 </div>
